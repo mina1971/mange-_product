@@ -154,7 +154,7 @@ function getSearchMood(id) {
 
   } else {
     
-    searchMood = 'searchCategory';
+    searchMood = 'Category';
 
   }
   
