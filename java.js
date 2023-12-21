@@ -1,4 +1,4 @@
-let title = document.getElementById('titel');
+let title = document.getElementById('title');
 let price = document.getElementById('price');
 let ads = document.getElementById('ads');
 let discount = document.getElementById('discount');
@@ -7,6 +7,7 @@ let total = document.getElementById('total');
 let count = document.getElementById('count');
 let category = document.getElementById('category');
 let submit = document.getElementById('submit');
+
 let mood = 'create';
 let tmp;
 // function get total
@@ -147,14 +148,17 @@ function updateData(i) {
 let searchMood = 'title';
 function getSearchMood(id) {
   let search = document.getElementById('search');
-  if (id == 'searchTitle') {
+  if (id == 'searchTitle'){
+   
     searchMood = 'title';
 
   } else {
-    searchMood = 'category';
+    
+    searchMood = 'searchCategory';
 
   }
-  searchMood.placeholder = 'Search By ' + searchMood;
+  
+  search.placeholder = 'Search By ' +searchMood;
   search.focus();
   search.value = '';
   showData()
